@@ -8,4 +8,8 @@ def call(String filter_string, int occurrence) {
     if (count > occurrence -1) {
         currentBuild.result='UNSTABLE'
     }
+    else
+    {
+        currentBuild.result='STABLE'
+    }
 }
