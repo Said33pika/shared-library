@@ -11,13 +11,7 @@ def call(String filter_string, int occurrence) {
         currentBuild.result = 'UNSTABLE'
     }
     else{
-        println (currentBuild.result)
+        println (currentBuild.currentResult)
     }
-    
-    //println (currentBuild.currentResult)
-    
-    /*println "################"
-    println (logs)
-    echo "$count"*/
-    //echo "string sent: ${filter_string}"
+
 }
