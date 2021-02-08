@@ -13,6 +13,7 @@ def call(String filter_string, int occurrence) {
     {
         currentBuild.result='STABLE'
     }*/
-    echo count
-    echo "string sent: ${filter_string}"
+    println (count)
+    echo "$count"
+    //echo "string sent: ${filter_string}"
 }
