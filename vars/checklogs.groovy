@@ -7,14 +7,14 @@ def call(String filter_string, int occurrence) {
     int count = StringUtils.countMatches(logs, filter_string);
     println(count)
     println(occurrence)
-    /*if (count > occurrence - 1) {
+    if (count > occurrence - 1) {
         currentBuild.result = 'UNSTABLE'
     }
     else{
-        currentBuild.result = 'STABLE'
-    }*/
+        println (currentBuild.result)
+    }
     
-    println (currentBuild.currentResult)
+    //println (currentBuild.currentResult)
     
     /*println "################"
     println (logs)
